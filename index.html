@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  </body>
+<body>
+
+  <header>
+    <nav>
+      <a><img src="img/logo.svg" alt="Логотип Седоны" width="140" height="70"></a>
+      <ul class="site-navigation">
+        <li class="site-navigation-item"><a href="info.html">Информация</a></li>
+        <li class="site-navigation-item"><a href="gallery.html">Фото и видео</a></li>
+        <li class="site-navigation-item"><a href="#map">Карта штата</a></li>
+        <li class="site-navigation-item"><a href="catalog.html">Гостиницы</a></li>
+      </ul>
+    </nav>
+
+    <div class="welcome-block">
+      <img class="main-photo" src="img/main-photo.jpg" width="1200" height="510" alt="Горы Седоны">
+      <img class="welcome-text" src="img/welcome-text.svg" width="460" height="355"
+        alt="Добро пожаловать в великолепную Седону.">
+    </div>
+  </header>
+
+  <main>
+
+    <section class="features">
+      <h2>
+        Седона — небольшой городок в Аризоне,<br>
+        заслуживающий большего!
+      </h2>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <!-- Блок, который будет свёрстан в последующих заданиях -->
+    </section>
+
+    <section class="hotel-search">
+      <h2>Заинтересовались?</h2>
+      <p>
+        Укажите предполагаемые даты поездки,<br>
+        и мы покажем вам лучшие предложения гостиниц в седоне
+      </p>
+      <button type="button">Поиск гостиницы в Седоне</button>
+      <!-- Форма будет свёрстан в следующих заданиях -->
+    </section>
+
+    <section class="map">
+      <img src="img/map.jpg" alt="Карта местности">
+    </section>
+
+  </main>
+
+  <footer>
+    <p class="footer-contacts">
+      #Visitsedonabr <br>
+      Тел: +7(495) 666-02-66
+    </p>
+    <ul class="social">
+      <li><a href="#">Твитер</a></li>
+      <li><a href="#">Фэсбук</a></li>
+      <li><a href="#">Ютуб</a></li>
+    </ul>
+    <cite>Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/academy-logo.svg" width="120"
+          height="40" alt="HTML Academy"></a></cite>
+  </footer>
+</body>
+
 </html>
