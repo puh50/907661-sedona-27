@@ -8,23 +8,88 @@
 
 <body>
     <header>
+        <a href="index.html"><img src="img/logo.svg"
+            alt="Логотип Седоны в виде треугольника, развёрнутого вершиной вниз. Основание - в виде металлического моста над каньоном"
+            width="140" height="70">
+        </a>
         <nav>
-            <a href="index.html"><img src="img/logo.svg"
-                    alt="Логотип Седоны в виде треугольника, развёрнутого вершиной вниз. Основание - в виде металлического моста над каньоном"
-                    width="140" height="70"></a>
             <ul class="site-navigation">
                 <li class="site-navigation-item"><a href="info.html">Информация</a></li>
                 <li class="site-navigation-item"><a href="gallery.html">Фото и видео</a></li>
                 <li class="site-navigation-item"><a href="#map">Карта штата</a></li>
-                <li class="site-navigation-item site-navigation-item-current"><a>Гостиницы</a></li>
+                <li class="site-navigation-item site-navigation-item-current"><a href="#">Гостиницы</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <form class="catalog-filter" action="">
-            <!-- Будет свёрстан в следующих заданиях -->
-        </form>
+
+        <section class="catalog-filter">
+            <form action="https://echo.htmlacademy.ru" method="POST">
+                <fieldset>
+                    <legend>Инфраструктура:</legend>
+                    <ul>
+                        <li>
+                            <label for="sweemingpoll">
+                                <input type="checkbox" id="sweemingpoll" name="sweemingpoll" checked>
+                                Бассейн
+                            </label>
+                        </li>
+                        <li>
+                            <label for="parking">
+                                <input type="checkbox" id="parking" name="parking">
+                                Парковка
+                            </label>
+                        </li>
+                        <li>
+                            <label for="wifi">
+                                <input type="checkbox" id="wifi" name="wifi">
+                                Wi-Fi
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Тип жилья:</legend>
+                    <ul>
+                        <li>
+                            <label for="hotel">
+                                <input type="checkbox" id="hotel" name="hotel" checked>
+                                Отель
+                            </label>
+                        </li>
+                        <li>
+                            <label for="motel">
+                                <input type="checkbox" id="motel" name="motel" checked>
+                                Мотель
+                            </label>
+                        </li>
+                        <li>
+                            <label for="apartment">
+                                <input type="checkbox" id="apartment" name="apartment" checked>
+                                Апартаменты
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Стоимость в сутки (Р):</legend>
+                    <div class="range-slider">
+                        <input type="number" value="0" name="min">
+                        <input type="number" value="0" name="max">
+
+                        <div class="range-slider-track">
+                            <div class="range-slider-pin range-slider-pin-min"></div>
+                            <div class="range-slider-pin range-slider-pin-max"></div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Показать</button>
+            </form>
+        </section>
 
         <section class="sorting-block">
             <span>Найдено 3:</span>
@@ -32,9 +97,9 @@
             <div class="sorting">
                 <p>Сортировка:</p>
                 <ul>
-                    <li class="sorting-item">По цене</li>
-                    <li class="sorting-item">По типу</li>
-                    <li class="sorting-item">По рейтингу</li>
+                    <li class="sorting-item"><a href="#">По цене</a></li>
+                    <li class="sorting-item"><a href="#">По типу</a></li>
+                    <li class="sorting-item"><a href="#">По рейтингу</a></li>
                 </ul>
             </div>
 
