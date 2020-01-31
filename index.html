@@ -10,7 +10,9 @@
 
   <header>
     <nav>
-      <a class="logo"><img src="img/logo.svg" alt="Логотип Седоны" width="140" height="70"></a>
+      <a class="logo"><img src="img/logo.svg"
+          alt="Логотип Седоны в виде треугольника, развёрнутого вершиной вниз. Основание - в виде металлического моста над каньоном"
+          width="140" height="70"></a>
       <ul class="site-navigation">
         <li class="site-navigation-item"><a href="info.html">Информация</a></li>
         <li class="site-navigation-item"><a href="gallery.html">Фото и видео</a></li>
@@ -100,11 +102,38 @@
         и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
       <button type="button">Поиск гостиницы в Седоне</button>
-      <!-- Форма будет свёрстана в следующих заданиях -->
+
+      <form class="hotel-search" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="from-date">
+            Дата заезда:
+            <input type="date" id="from-date" name="from-date" value="2017-04-27">
+            <span class="calendar"></span>
+          </label>
+        </p>
+        <p>
+          <label for="to-date">
+            Дата выезда:
+            <input type="date" id="to-date" name="to-date" value="2017-07-04">
+            <span class="calendar"></span>
+          </label>
+        </p>
+        <p>
+          <label for="to-date">
+            Взрослые:
+            <span>-</span><input type="number" id="to-date" name="parent-number" value="2"><span>+</span>
+          </label>
+          <label for="to-date">
+            Дети:
+            <span>-</span><input type="number" id="to-date" name="children-number" value="0"><span>+</span>
+          </label>
+        </p>
+        <button type="submit">Найти</button>
+      </form>
     </section>
 
     <section class="map">
-      <img src="img/map.jpg" width="1200" height="594" alt="Карта местности">
+      <img src="img/map.jpg" width="1200" height="594" alt="Расположение Седоны на карте. Седона находится в Аризоне">
     </section>
 
   </main>
@@ -115,13 +144,14 @@
       Тел: +7(495) 666-02-66
     </p>
     <ul class="social">
-      <li><a href="#">Твитер</a></li>
-      <li><a href="#">Фэйсбук</a></li>
-      <li><a href="#">Ютуб</a></li>
+      <li><a href="#" aria-label="Твитер">иконка Твитер</a></li>
+      <li><a href="#" aria-label="Фэйсбук">иконка Фэйсбук</a></li>
+      <li><a href="#" aria-label="Ютуб">иконка Ютуб</a></li>
     </ul>
-    <cite>Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="logo-htmla" src="img/logo-htmla.svg" width="115"
-          height="40" alt="Логотип HTML Academy"></a></cite>
+    <cite>Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="logo-htmla" src="img/logo-htmla.svg"
+          width="115" height="40" alt="Логотип HTML Academy"></a></cite>
   </footer>
+
 </body>
 
 </html>
