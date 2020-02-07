@@ -4,15 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
   <header>
-      <a href="#" class="logo"><img src="img/logo.svg"
+    <a href="#" class="logo"><img src="img/logo.svg"
         alt="Логотип Седоны в виде треугольника, развёрнутого вершиной вниз. Основание - в виде металлического моста над каньоном"
         width="140" height="70">
-      </a>
+    </a>
     <nav>
       <ul class="site-navigation">
         <li class="site-navigation-item"><a href="info.html">Информация</a></li>
@@ -26,15 +29,17 @@
   <main>
     <h1 class="visually-hidden">Седона. Добро пожаловать!</h1>
     <div class="welcome-block">
-      <!-- Картинка и текст добавятся в css -->
+      <div class="white-bottom"></div>
     </div>
 
     <section class="features">
-      <h2>
-        Седона — небольшой городок в Аризоне,<br>
-        заслуживающий большего!
-      </h2>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <div class="features-intro">
+        <h2>
+          Седона — небольшой городок в Аризоне,<br>
+          заслуживающий большего!
+        </h2>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
       <ul class="features-list">
         <li class="features-list-item-1">
 
@@ -102,9 +107,9 @@
         Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
-      <button type="button">Поиск гостиницы в Седоне</button>
+      <button type="button" class="button button-brown">Поиск гостиницы в Седоне</button>
 
-      <form class="hotel-search" action="https://echo.htmlacademy.ru" method="post">
+      <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="from-date">
             Дата заезда:
@@ -149,8 +154,14 @@
       <li><a href="#" aria-label="Фэйсбук">иконка Фэйсбук</a></li>
       <li><a href="#" aria-label="Ютуб">иконка Ютуб</a></li>
     </ul>
-    <cite>Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="logo-htmla" src="img/logo-htmla.svg"
-          width="115" height="40" alt="Логотип HTML Academy"></a></cite>
+
+    <cite class="copyright">
+      <span>Website by</span>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img class="logo-htmla" src="img/logo-htmla.svg" width="115" height="40" alt="Логотип HTML Academy">
+      </a>
+    </cite>
+
   </footer>
 
 </body>
