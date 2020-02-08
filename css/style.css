@@ -21,6 +21,9 @@ a {
     font-weight: 700;
     line-height: inherit;
     color: #ffffff;
+
+    text-transform: uppercase;
+
     text-align: center;
     vertical-align: middle;
 
@@ -75,8 +78,10 @@ header {
 }
 
 .site-navigation-item a {
-    color: inherit;
+    font-size: 14px;
     font-weight: 700;
+    line-height: 26px;
+    color: #000000;
 }
 
 .site-navigation-item a:hover {
@@ -92,20 +97,78 @@ header {
 .welcome-block {
     width: 1200px;
     height: 511px;
-    background: 
-        url("../img/welcome.svg") no-repeat center center/ 39%,
-        url("../img/polygon.png") no-repeat -1px calc(100% + 1px), 
-        url("../img/background-photo.jpg") no-repeat 0 -80px;
+
+    background-image: 
+        url("../img/polygon.png"),  
+        url("../img/background-photo.jpg");
+    background-repeat: no-repeat;
+    background-position: -1px calc(100% + 1px), 0 -80px;
 }
 
-.features-intro {
+.reason-intro {
     text-align: center;
 }
 
-.features-intro h2 {
+.reason-intro h2 {
     font-size: 21px;
     font-weight: 700;
+    line-height: 26px;
     color: #000000;
+}
+
+.reason-list, .reason-list-item-1-features {
+    list-style: none;
+}
+
+.reason-list-item-1-description,
+.reason-list-item-2-description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #ffffff;
+
+    background-color: #81b3d2;
+}
+
+.reason-list-item-1-image,
+.reason-list-item-2-image {
+    background-color: #cccccc;
+}
+
+.reason-list-item-1-description h3,
+.reason-list-item-2-description h3 {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.reason-list-item-1-features,
+.reason-list-item-3,
+.reason-list-item-4,
+.reason-list-item-5 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #333333; 
+}
+
+.reason-list-item-1-features {
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.reason-list-item-3,
+.reason-list-item-4,
+.reason-list-item-5 {
+    background-color: #eeeeee;
+}
+
+.features-item h4,
+.reason-list-item-3 h3,
+.reason-list-item-4 h3,
+.reason-list-item-5 h3 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #000000; 
 }
 
 .hotel-search {
@@ -125,12 +188,78 @@ header {
 
 /* MAIN catalog */
 
+.catalog-filter {
+    background-image: url("../img/filter-background.jpg");
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+
+.catalog-filter-form {
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.catalog-filter-form fieldset {
+    border: none;
+}
+
+.catalog-filter-form legend {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.catalog-filter-form ul {
+    list-style: none;
+    padding: 0;
+}
+
+.catalog-filter-form button {
+    color: #ffffff;
+    text-transform: uppercase;
+
+    border: 2px solid #ffffff;
+    background-color: transparent;
+}
+
+.sorting-block {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #000000;
+}
+
+.found {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.sorting ul {
+    list-style: none;
+}
+
+.sorting-item a {
+    color: rgba(0, 0, 0, 0.3);
+    
+    border-bottom: 1px dashed #81b3d2;
+}
+
+.sorting-item-current a {
+    color: #81b3d2;
+
+    border-bottom: none;
+}
+
 .catalog-list {
     list-style: none;
 }
 
 .catalog-item h2 {
     font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
     color: #000000;
 }
 
@@ -141,7 +270,9 @@ header {
 .catalog-item-info-button,
 .catalog-item-reservation-button {
     font-size: 14px;
+    font-weight: 700;
     line-height: 21px;
+    color: #ffffff;
 }
 
 .catalog-item-info-button {
@@ -149,9 +280,10 @@ header {
 }
 
 .catalog-item-mark {
-
     display: inline-block;
 
+    font-size: 14px;
+    font-weight: 400;
     line-height: 21px;
     color: #666666;
 
@@ -163,6 +295,7 @@ header {
 .footer-contacts {
     font-size: 21px;
     font-weight: 700;
+    line-height: 26px;
     color: #000000;
 
     text-align: center;
