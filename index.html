@@ -11,28 +11,34 @@
 
 <body>
 
-  <header>
-    <a href="#" class="logo"><img src="img/logo.svg"
+  <header class="content-center">
+    <a href="#" class="logo">
+      <img src="img/logo.svg"
         alt="Логотип Седоны в виде треугольника, развёрнутого вершиной вниз. Основание - в виде металлического моста над каньоном"
         width="140" height="70">
     </a>
     <nav>
       <ul class="site-navigation">
-        <li class="site-navigation-item"><a href="info.html">Информация</a></li>
-        <li class="site-navigation-item"><a href="gallery.html">Фото и видео</a></li>
-        <li class="site-navigation-item"><a href="#map">Карта штата</a></li>
-        <li class="site-navigation-item"><a href="catalog.html">Гостиницы</a></li>
+        <div class="menu-items-left">
+          <li class="site-navigation-item"><a href="info.html">Информация</a></li>
+          <li class="site-navigation-item"><a href="gallery.html">Фото и видео</a></li>
+        </div>
+        <div class="menu-items-right">
+          <li class="site-navigation-item"><a href="#map">Карта штата</a></li>
+          <li class="site-navigation-item"><a href="catalog.html">Гостиницы</a></li>
+        </div>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main class="content-center">
     <h1 class="visually-hidden">Седона. Добро пожаловать!</h1>
     <div class="welcome-block">
-      <img src="img/welcome.svg" class="welcome-text" width="459" height="353" alt="Добро пожаловать в великолепную Седону! Потому что большой каньон отстой">
+      <img src="img/welcome.svg" class="welcome-text" width="459" height="353"
+        alt="Добро пожаловать в великолепную Седону! Потому что большой каньон отстой">
     </div>
 
-    <section class="reason">
+    <section class="reasons">
       <div class="reason-intro">
         <h2>
           Седона — небольшой городок в Аризоне,<br>
@@ -43,61 +49,65 @@
       <ul class="reason-list">
         <li class="reason-list-item-1">
 
-          <div>
+          <div class="reason-list-item-flex-block">
             <div class="reason-list-item-1-description">
               <h3>Настоящий городок</h3>
-              <span class="reason-list-item-description-number">№1</span>
-              <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <span class="reason-list-item-description-number">&mdash; №1 &mdash;</span>
+              <p>Седона — не аттракцион для туристов,<br> там течёт своя жизнь</p>
             </div>
             <div class="reason-list-item-1-image">
-              <img src="img/feature-picture-1.jpg" alt="Городок Седона">
+              <img src="img/feature-picture-1.jpg" width="800" height="256" alt="Городок Седона">
             </div>
           </div>
 
           <ul class="reason-list-item-1-features">
-            <li class="features-item">
+            <li class="features-item features-item-housing-icon">
               <h4>Жильё</h4>
-              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
             </li>
-            <li class="features-item">
+            <li class="features-item features-item-food-icon">
               <h4>Еда</h4>
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
             </li>
-            <li class="features-item">
+            <li class="features-item features-item-souvenirs-icon">
               <h4>Сувениры</h4>
-              <p>Не только китайского, но и местного производства!</p>
+              <p>Не только китайского, но и местного<br> производства!</p>
             </li>
           </ul>
 
         </li>
         <li class="reason-list-item-2">
-          <div class="reason-list-item-2-description">
-            <h3>Там есть мост дьявола</h3>
-            <span class="reason-list-item-description-number">№2</span>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <div class="reason-list-item-flex-block reason-list-item-flex-block-reverse">
+            <div class="reason-list-item-2-description">
+              <h3>Там есть мост дьявола</h3>
+              <span class="reason-list-item-description-number">&mdash; №2 &mdash;</span>
+              <p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
+            </div>
+            <div class="reason-list-item-2-image">
+              <img src="img/feature-picture-2.jpg" width="800" height="256" alt="Мост дьявола">
+            </div>
           </div>
-          <div class="reason-list-item-2-image">
-            <img src="img/feature-picture-2.jpg" alt="Мост дьявола">
-          </div>
         </li>
-        <li class="reason-list-item-3">
-          <h3>Небольшая площадь</h3>
-          <span class="reason-list-item-description-number">№3</span>
-          <p>Все достопримечательности
-            находятся очень близко</p>
-        </li>
-        <li class="reason-list-item-4">
-          <h3>Красивая дорога</h3>
-          <span class="reason-list-item-description-number">№4</span>
-          <p>Ехать в Седону из Лас-Вегаса совсем
-            не скучно!</p>
-        </li>
-        <li class="reason-list-item-5">
-          <h3>Мало туристов</h3>
-          <span class="reason-list-item-description-number">№4</span>
-          <p>Большинство едет в гранд каньон
-            и толпится там</p>
-        </li>
+        <div class="reason-list-item-flex-block">
+          <li class="reason-list-item">
+            <h3>Небольшая площадь</h3>
+            <span class="reason-list-item-description-number">&mdash; №3 &mdash;</span>
+            <p>Все достопримечательности<br>
+              находятся очень близко</p>
+          </li>
+          <li class="reason-list-item">
+            <h3>Красивая дорога</h3>
+            <span class="reason-list-item-description-number">&mdash; №4 &mdash;</span>
+            <p>Ехать в Седону из Лас-Вегаса совсем<br>
+              не скучно!</p>
+          </li>
+          <li class="reason-list-item">
+            <h3>Мало туристов</h3>
+            <span class="reason-list-item-description-number">&mdash; №5 &mdash;</span>
+            <p>Большинство едет в гранд каньон<br>
+              и толпится там</p>
+          </li>
+        </div>
       </ul>
     </section>
 
@@ -107,7 +117,8 @@
         Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
-      <button type="button" class="button button-brown">Поиск гостиницы в Седоне</button>
+
+      <button type="button" class="button button-brown hotel-search-button">Поиск гостиницы в Седоне</button>
 
       <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
@@ -137,30 +148,32 @@
         <button type="submit">Найти</button>
       </form>
     </section>
-
-    <section class="map">
-      <img src="img/map.jpg" width="1200" height="594" alt="Расположение Седоны на карте. Седона находится в Аризоне">
-    </section>
-
+    
   </main>
 
-  <footer>
-    <p class="footer-contacts">
-      #Visitsedonabr <br>
-      Тел: +7(495) 666-02-66
-    </p>
-    <ul class="social">
-      <li><a href="#" aria-label="Твитер">иконка Твитер</a></li>
-      <li><a href="#" aria-label="Фэйсбук">иконка Фэйсбук</a></li>
-      <li><a href="#" aria-label="Ютуб">иконка Ютуб</a></li>
-    </ul>
+  <footer class="content-center">
 
-    <cite class="copyright">
-      <span>Website by</span>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img class="logo-htmla" src="img/logo-htmla.svg" width="115" height="40" alt="Логотип HTML Academy">
-      </a>
-    </cite>
+    <img src="img/map.jpg" class="map" width="1200" height="594"
+      alt="Расположение Седоны на карте. Седона находится в Аризоне">
+
+    <div class="footer-contact-block">
+      <p class="footer-contacts">
+        #Visitsedonabr <br>
+        Тел: +7(495) 666-02-66
+      </p>
+      <ul class="social">
+        <li><a href="#" aria-label="Твитер">Т</a></li>
+        <li><a href="#" aria-label="Фэйсбук">Ф</a></li>
+        <li><a href="#" aria-label="Ютуб">Ю</a></li>
+      </ul>
+
+      <cite class="copyright">
+        <span>Website by</span>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img class="logo-htmla" src="img/logo-htmla.svg" width="115" height="40" alt="Логотип HTML Academy">
+        </a>
+      </cite>
+    </div>
 
   </footer>
 

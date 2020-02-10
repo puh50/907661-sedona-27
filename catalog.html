@@ -10,22 +10,27 @@
 </head>
 
 <body>
-    <header>
-        <a href="index.html"><img src="img/logo.svg"
+    <header class="content-center">
+        <a href="index.html" class="logo">
+            <img src="img/logo.svg"
                 alt="Логотип Седоны в виде треугольника, развёрнутого вершиной вниз. Основание - в виде металлического моста над каньоном"
                 width="140" height="70">
         </a>
         <nav>
             <ul class="site-navigation">
-                <li class="site-navigation-item"><a href="info.html">Информация</a></li>
-                <li class="site-navigation-item"><a href="gallery.html">Фото и видео</a></li>
-                <li class="site-navigation-item"><a href="#map">Карта штата</a></li>
-                <li class="site-navigation-item site-navigation-item-current"><a href="#">Гостиницы</a></li>
+                <div class="menu-items-left">
+                    <li class="site-navigation-item"><a href="info.html">Информация</a></li>
+                    <li class="site-navigation-item"><a href="gallery.html">Фото и видео</a></li>
+                </div>
+                <div class="menu-items-right">
+                    <li class="site-navigation-item"><a href="#map">Карта штата</a></li>
+                    <li class="site-navigation-item"><a href="catalog.html">Гостиницы</a></li>
+                </div>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="content-center">
 
         <section class="catalog-filter">
             <form class="catalog-filter-form" action="https://echo.htmlacademy.ru" method="POST">
@@ -112,85 +117,102 @@
             </div>
         </section>
 
-        <ul class="catalog-list">
-            <li class="catalog-item">
-                <figure>
-                    <img src="img/hotel-picture-1.jpg" width="135" height="90" alt="Главный вход гостиницы">
-                    <figcaption>
-                        <h2>Amara Resort & Spa</h2>
-                        <p class="catalog-item-description">
-                            <span class="catalog-item-type">Гостиница</span>
-                            <span class="catalog-item-price">от 4000 р.</span>
-                        </p>
-                        <p class="catalog-item-buttons">
-                            <button type="button" class="button button-blue catalog-item-info-button">Подробнее</button>
-                            <button type="button" class="button button-brown catalog-item-reservation-button">Забронировать</button>
-                        </p>
-                    </figcaption>
-                </figure>
-                <div class="catalog-item-rating">
-                    <span class="catalog-item-star"></span>
-                    <span class="catalog-item-star"></span>
-                    <span class="catalog-item-star"></span>
-                    <span class="catalog-item-star"></span>
-                    <p class="catalog-item-mark">Рейтинг: 8,5</p>
-                </div>
-            </li>
-            <li class="catalog-item">
-                <figure>
-                    <img src="img/hotel-picture-2.jpg" width="135" height="90" alt="Главный вход мотеля">
-                    <figcaption>
-                        <h2>Desert Quail Inn</h2>
-                        <p class="catalog-item-description">
-                            <span class="catalog-item-type">Мотель</span>
-                            <span class="catalog-item-price">от 3000 р.</span>
-                        </p>
-                        <p class="catalog-item-buttons">
-                            <button type="button" class="button button-blue catalog-item-info-button">Подробнее</button>
-                            <button type="button" class="button button-brown catalog-item-reservation-button">Забронировать</button>
-                        </p>
-                    </figcaption>
-                </figure>
-                <div class="catalog-item-rating">
-                    <span class="catalog-item-star"></span>
-                    <span class="catalog-item-star"></span>
-                    <span class="catalog-item-star"></span>
-                    <p class="catalog-item-mark">Рейтинг: 8,9</p>
-                </div>
-            </li>
-            <li class="catalog-item">
-                <figure>
-                    <img src="img/hotel-picture-3.jpg" width="135" height="90" alt="Гостевой домик">
-                    <figcaption>
-                        <h2>Villas at Poco Diablo</h2>
-                        <p class="catalog-item-description">
-                            <span class="catalog-item-type">Апартаменты</span>
-                            <span class="catalog-item-price">от 2000 р.</span>
-                        </p>
-                        <p class="catalog-item-buttons">
-                            <button type="button" class="button button-blue catalog-item-info-button">Подробнее</button>
-                            <button type="button" class="button button-brown catalog-item-reservation-button">Забронировать</button>
-                        </p>
-                    </figcaption>
-                </figure>
-                <div class="catalog-item-rating">
-                    <span class="catalog-item-star"></span>
-                    <span class="catalog-item-star"></span>
-                    <p class="catalog-item-mark">Рейтинг: 9,2</p>
-                </div>
-            </li>
-        </ul>
+        <section>
+            <ul class="catalog-list">
+                <li class="catalog-item">
+                    <figure>
+                        <img src="img/hotel-picture-1.jpg" class="catalog-item-image" width="135" height="90"
+                            alt="Главный вход гостиницы">
+                        <figcaption class="catalog-item-text">
+                            <h2>Amara Resort & Spa</h2>
+                            <p class="catalog-item-description">
+                                <span class="catalog-item-type">Гостиница</span>
+                                <span class="catalog-item-price">от 4000 р.</span>
+                            </p>
+                            <p class="catalog-item-buttons">
+                                <button type="button"
+                                    class="button button-blue catalog-item-info-button">Подробнее</button>
+                                <button type="button"
+                                    class="button button-brown catalog-item-reservation-button">Забронировать</button>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <div class="catalog-item-rating">
+                        <div class="catalog-item-stars">
+                            <span class="catalog-item-star"></span>
+                            <span class="catalog-item-star"></span>
+                            <span class="catalog-item-star"></span>
+                            <span class="catalog-item-star"></span>
+                        </div>
+                        <p class="catalog-item-mark">Рейтинг: 8,5</p>
+                    </div>
+                </li>
+                <li class="catalog-item">
+                    <figure>
+                        <img src="img/hotel-picture-2.jpg" class="catalog-item-image" width="135" height="90"
+                            alt="Главный вход мотеля">
+                        <figcaption class="catalog-item-text">
+                            <h2>Desert Quail Inn</h2>
+                            <p class="catalog-item-description">
+                                <span class="catalog-item-type">Мотель</span>
+                                <span class="catalog-item-price">от 3000 р.</span>
+                            </p>
+                            <p class="catalog-item-buttons">
+                                <button type="button"
+                                    class="button button-blue catalog-item-info-button">Подробнее</button>
+                                <button type="button"
+                                    class="button button-brown catalog-item-reservation-button">Забронировать</button>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <div class="catalog-item-rating">
+                        <div class="catalog-item-stars">
+                            <span class="catalog-item-star"></span>
+                            <span class="catalog-item-star"></span>
+                            <span class="catalog-item-star"></span>
+                        </div>
+                        <p class="catalog-item-mark">Рейтинг: 8,9</p>
+                    </div>
+                </li>
+                <li class="catalog-item">
+                    <figure>
+                        <img src="img/hotel-picture-3.jpg" class="catalog-item-image" width="135" height="90"
+                            alt="Гостевой домик">
+                        <figcaption class="catalog-item-text">
+                            <h2>Villas at Poco Diablo</h2>
+                            <p class="catalog-item-description">
+                                <span class="catalog-item-type">Апартаменты</span>
+                                <span class="catalog-item-price">от 2000 р.</span>
+                            </p>
+                            <p class="catalog-item-buttons">
+                                <button type="button"
+                                    class="button button-blue catalog-item-info-button">Подробнее</button>
+                                <button type="button"
+                                    class="button button-brown catalog-item-reservation-button">Забронировать</button>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <div class="catalog-item-rating">
+                        <div class="catalog-item-stars">
+                            <span class="catalog-item-star"></span>
+                            <span class="catalog-item-star"></span>
+                        </div>
+                        <p class="catalog-item-mark">Рейтинг: 9,2</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
     </main>
 
-    <footer>
+    <footer class="content-center footer-catalog">
         <p class="footer-contacts">
             #Visitsedonabr <br>
             Тел: +7(495) 666-02-66
         </p>
         <ul class="social">
-            <li><a href="#" aria-label="Твитер">иконка Твитер</a></li>
-            <li><a href="#" aria-label="Фэйсбук">иконка Фэйсбук</a></li>
-            <li><a href="#" aria-label="Ютуб">иконка Ютуб</a></li>
+            <li><a href="#" aria-label="Твитер">Т</a></li>
+            <li><a href="#" aria-label="Фэйсбук">Ф</a></li>
+            <li><a href="#" aria-label="Ютуб">Ю</a></li>
         </ul>
         <cite class="copyright">
             <span>Website by</span>
