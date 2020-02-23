@@ -106,8 +106,8 @@ header {
 .site-navigation-item {
     text-align: center;
 
-    width: 239px;
-    padding: 15px 10px;
+    width: 215px;
+    padding: 14px 10px 16px 10px;
 }
 
 .menu-items-left {
@@ -122,6 +122,22 @@ header {
     flex-direction: row;
     justify-content: flex-end;
     flex-wrap: wrap;
+}
+
+.site-navigation-item-info {
+    padding-left: 11px; 
+}
+
+.site-navigation-item-media {
+    padding-left: 18px; 
+}
+
+.site-navigation-item-statemap {
+    padding-right: 23px; 
+}
+
+.site-navigation-item-catalog {
+    padding-right: 4px; 
 }
 
 .site-navigation-item a {
@@ -154,20 +170,24 @@ header {
     justify-content: center;
     align-items: center;
 
-    height: 511px;
+    height: 508px;
 
     background-image: 
         url("../img/polygon.png"),  
         url("../img/background-photo.jpg");
     background-repeat: no-repeat;
-    background-position: 50% 100%, 0 -80px;
+    background-position: 50% 100%, 0 -83px;
+}
+
+.welcome-text {
+    padding-bottom: 4px;
 }
 
 .reason-intro {
     text-align: center;
 
     padding-top: 43px;
-    padding-bottom: 41px;
+    padding-bottom: 37px;
 }
 
 .reason-intro h2 {
@@ -176,11 +196,12 @@ header {
     line-height: 26px;
     color: #000000;
 
-    margin-bottom: 33px;
+    margin-bottom: 27px;
 }
 
 .reason-list, .reason-list-item-1-features {
     padding: 0;
+    margin: 0;
 
     list-style: none;
 }
@@ -188,7 +209,9 @@ header {
 .reason-list-item-flex-block {
     display: flex;
 
-    height: 256px;
+    min-height: 256px;
+
+    line-height: 10px;
 }
 
 .reason-list-item-flex-block-reverse {
@@ -200,27 +223,48 @@ header {
 .reason-list-item-2-description {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
+    justify-content: flex-start;
+
+    min-width: 400px;
+
+    padding: 47px 10px 0 10px;
+    box-sizing: border-box;
 
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
     color: #ffffff;
+
     text-align: center;
+    word-break: break-word;
 
     background-color: #81b3d2;
 }
 
 .reason-list-item-1-image,
 .reason-list-item-2-image {
+    min-width: 800px;
+    min-height: 100%;
+
     background-color: #cccccc;
+}
+
+.reason-list-item-1-image img,
+.reason-list-item-2-image img {
+    height: 100%;
 }
 
 .reason-list-item-1-description h3,
 .reason-list-item-2-description h3 {
     font-size: 21px;
     font-weight: 700;
+
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.reason-list-item-description-number {
+    margin-bottom: 7px;
 }
 
 .reason-list-item-1-features,
@@ -238,16 +282,28 @@ header {
     background-color: #ffffff;
 }
 
+.reason-list-item-1-features h4 {
+    margin-top: 29px;
+    margin-bottom: 10px;
+}
+
 .features-item,
 .reason-list-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 
     text-align: center;
 
     width: 400px;
-    height: 330px;
+    min-height: 330px;
+
+    box-sizing: border-box;
+}
+
+.features-item {
+    padding-top: 60px;
+    padding-bottom: 47px 10px 0 10px;
 }
 
 .features-item-housing-icon::before {
@@ -263,9 +319,10 @@ header {
     content: url("../img/icon-2.svg");
 
     width: 74px;
-    height: 70px;
+    height: 71px;
 
     margin: 0 auto;
+    margin-top: 1px;
 }
 
 .features-item-souvenirs-icon::before {
@@ -275,10 +332,13 @@ header {
     height: 76px;
 
     margin: 0 auto;
+    margin-top: -4px;
 }
 
 .reason-list-item {
-    height: 256px;
+    min-height: 256px;
+
+    padding-top: 47px;
 
     background-color: #eeeeee;
 }
@@ -290,10 +350,17 @@ header {
     color: #000000; 
 }
 
+.reason-list-item h3 {
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+
+
 .hotel-search {
     text-align: center;
 
-    padding-top: 30px;
+    padding-top: 25px;
 }
 
 .hotel-search h2 {
@@ -301,14 +368,16 @@ header {
     font-weight: 700;
     line-height: 36px;
     color: #000000;
+
+    margin-bottom: 23px;
 }
 
 .hotel-search-info {
-    margin-bottom: 50px;
+    margin-bottom: 44px;
 }
 
 .hotel-search-button {
-    padding: 35px 140px;
+    padding: 30px 140px;
 }
 
 .hotel-form-search-block {
@@ -347,6 +416,10 @@ input::-webkit-inner-spin-button {
     margin-bottom: 29px;
 }
 
+.to-date-block {
+    margin-bottom: 16px;
+}
+
 .from-date-label {
     margin-right: 21px;
 }
@@ -362,7 +435,7 @@ input::-webkit-inner-spin-button {
 }
 
 .hotel-search-form-field input {
-    width: 342px;
+    width: 345px;
     height: 38px;
     box-sizing: border-box;
 
@@ -403,6 +476,8 @@ input::-webkit-inner-spin-button {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+
+    margin-bottom: 40px;
 }
 
 .peaple-count-adults,
@@ -450,7 +525,7 @@ input::-webkit-inner-spin-button {
 
 .hotel-search-form-button {
     width: 100%;
-    padding: 22px;
+    padding: 18px;
 
     background-color: #81b3d2;
 }
@@ -485,7 +560,7 @@ input::-webkit-inner-spin-button {
     display: flex;
     justify-content: space-between;
 
-    padding: 30px 72px;
+    padding: 27px 72px 33px 72px;
 
     font-size: 14px;
     font-weight: 400;
@@ -496,10 +571,6 @@ input::-webkit-inner-spin-button {
 .catalog-filter-form-types {
     display: flex;
 }
-
-/* .catalog-filter-form-types input[type="checkbox"] {
-    margin-right: 15px;
-} */
 
 .catalog-filter-form fieldset {
     padding: 0;
@@ -518,7 +589,7 @@ input::-webkit-inner-spin-button {
 }
 
 .catalog-filter-form-cost legend {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 
     text-align: left;
 }
@@ -528,11 +599,11 @@ input::-webkit-inner-spin-button {
 
     padding: 0;
     margin: 0;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .catalog-filter-form li {
-    margin-bottom: 36px;
+    margin-bottom: 24px;
 }
 
 .catalog-filter-form li:last-child {
@@ -542,7 +613,11 @@ input::-webkit-inner-spin-button {
 .catalog-filter-form-types-checkbox {
     position: relative;
 
-    padding-left: 39px;
+    padding-left: 40px;
+}
+
+.housing-type label {
+    padding-left: 42px;
 }
 
 .catalog-filter-form-types-checkbox input[type="checkbox"] + .checkbox-indicator {
@@ -550,8 +625,8 @@ input::-webkit-inner-spin-button {
     top: -3px;
     left: 0;
   
-    width: 21px;
-    height: 21px;
+    width: 20px;
+    height: 20px;
   
     border: 2px solid #ffffff;
     border-radius: 2px;
@@ -561,21 +636,24 @@ input::-webkit-inner-spin-button {
     content: "";
 
     position: absolute;
-    top: -1px;
+    top: 0px;
     left: 3px;
 
-    width: 18px;
-    height: 7px;
+    width: 15px;
+    height: 8px;
 
     border-left: 5px solid #ffffff;
     border-bottom: 5px solid #ffffff;
-
     transform: rotate(-45deg);
 }
 
 .catalog-filter-form-types-checkbox input[type="checkbox"]:disabled + .checkbox-indicator::before,
 .catalog-filter-form-types-checkbox input[type="checkbox"]:disabled + .checkbox-indicator {
     border-color: #6a6a6a;
+}
+
+.catalog-filter-form-cost {
+    margin-right: 3px;
 }
 
 .filter-range {
@@ -585,6 +663,7 @@ input::-webkit-inner-spin-button {
 .price-controls {
     position: relative;
 
+    width: 100%;
     height: 32px;
     margin-bottom: 20px;
 
@@ -620,8 +699,8 @@ input::-webkit-inner-spin-button {
 
 .price-controls .min-price,
 .price-controls .max-price {
-    width: 85px;
-    padding-left: 61px;
+    width: 81px;
+    padding-left: 65px;
 }
 
 .price-controls input {
@@ -688,7 +767,8 @@ input::-webkit-inner-spin-button {
     color: #ffffff;
     text-transform: uppercase;
 
-    padding: 11px 35px;
+    padding: 8px 34px;
+    margin-right: 8px;
 
     border: 2px solid #ffffff;
     background-color: transparent;
@@ -704,7 +784,7 @@ input::-webkit-inner-spin-button {
     display: flex;
     justify-content: space-between;
 
-    padding: 30px 72px;
+    padding: 30px 67px 30px 72px;
 
     font-size: 12px;
     font-weight: 400;
@@ -715,7 +795,7 @@ input::-webkit-inner-spin-button {
 }
 
 .found {
-    margin-right: 50px;
+    margin-right: 48px;
 
     font-size: 21px;
     font-weight: 700;
@@ -727,10 +807,17 @@ input::-webkit-inner-spin-button {
     align-items: center;
 }
 
+.sorting p {
+    margin: 0;
+    margin-top: 3px;
+}
+
 .sorting ul {
     display: flex;
 
     padding: 0;
+    margin: 0;
+    margin-top: 3px;
     margin-left: 40px;
 
     list-style: none;
@@ -763,6 +850,8 @@ input::-webkit-inner-spin-button {
 .sorting-arrows {
     display: flex;
     align-items: center;
+
+    padding-top: 4px;
 }
 
 .sorting-arrow {
@@ -793,7 +882,7 @@ input::-webkit-inner-spin-button {
     flex-direction: row;
     justify-content: space-between;
 
-    padding: 30px 72px;
+    padding: 26px 72px 30px 72px;
     border-top: 1px solid #e5e5e5;
 }
 
@@ -812,6 +901,7 @@ input::-webkit-inner-spin-button {
 
 .catalog-item-image {
     margin-right: 30px;
+    margin-top: 4px;
 }
 
 .catalog-item-text {
@@ -856,6 +946,10 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
+.td-button {
+    padding-top: 10px;
+}
+
 .catalog-item-info-button,
 .catalog-item-reservation-button {
     font-size: 14px;
@@ -863,12 +957,16 @@ input::-webkit-inner-spin-button {
     line-height: 21px;
     color: #ffffff;
 
-    padding: 8px 16px;
+    padding: 2px 16px;
 }
 
 .catalog-item-info-button {
     background-color: #81b3d2;
-    margin-right: 6px;
+    margin-right: 4px;
+}
+
+.catalog-item-reservation-button {
+    padding: 2px 17px;
 }
 
 .catalog-item-rating {
@@ -878,7 +976,12 @@ input::-webkit-inner-spin-button {
 }
 
 .catalog-item-stars {
+    padding-top: 2px;
     text-align: right;
+}
+
+.catalog-item-star {
+    margin-right: 2px;
 }
 
 .catalog-item-star::before {
@@ -901,7 +1004,7 @@ input::-webkit-inner-spin-button {
     line-height: 21px;
     color: #666666;
 
-    padding: 5px 15px;
+    padding: 3px 13px;
     margin: 0;
 
     background-color: #f2f2f2;
@@ -920,7 +1023,7 @@ footer {
     align-items: center;
 
     min-width: 100%;
-    padding: 26px 91px 26px 112px;
+    padding: 36px 90px 31px 113px;
     box-sizing: border-box;
 
     background-color: rgba(255, 255, 255, 0.9);
@@ -935,7 +1038,7 @@ footer {
     justify-content: space-between;
     align-items: center;
 
-    padding: 26px 91px 26px 112px;
+    padding: 36px 90px 31px 113px;
     box-sizing: border-box;
     box-shadow: 0 10px 15px 0 rgba(0, 1, 1, 0.2);
 
@@ -953,7 +1056,6 @@ footer {
     text-align: left;
 
     margin: 0;
-    padding: 10px;
 }
 
 .social {
@@ -964,9 +1066,9 @@ footer {
 
     width: auto;
 
-    padding: 10px;
+    padding: 0;
     margin: 0;
-    margin-left: -45px;
+    margin-right: 38px;
 
     text-align: center;
 
@@ -1016,7 +1118,8 @@ footer {
 
     min-width: 200px;
 
-    padding: 10px;
+    margin-right: 11px;
+    margin-bottom: 8px;
 
     text-align: center;
 }

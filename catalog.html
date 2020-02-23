@@ -19,12 +19,12 @@
         <nav>
             <ul class="site-navigation">
                 <div class="menu-items-left">
-                    <li class="site-navigation-item"><a href="info.html">Информация</a></li>
-                    <li class="site-navigation-item"><a href="gallery.html">Фото и видео</a></li>
+                    <li class="site-navigation-item site-navigation-item-info"><a href="info.html">Информация</a></li>
+                    <li class="site-navigation-item site-navigation-item-media"><a href="gallery.html">Фото и видео</a></li>
                 </div>
                 <div class="menu-items-right">
-                    <li class="site-navigation-item"><a href="#map">Карта штата</a></li>
-                    <li class="site-navigation-item"><a href="catalog.html">Гостиницы</a></li>
+                    <li class="site-navigation-item site-navigation-item-statemap"><a href="#map">Карта штата</a></li>
+                    <li class="site-navigation-item site-navigation-item-catalog"><a href="catalog.html">Гостиницы</a></li>
                 </div>
             </ul>
         </nav>
@@ -63,7 +63,7 @@
                         </ul>
                     </fieldset>
 
-                    <fieldset>
+                    <fieldset class="housing-type">
                         <legend>Тип жилья:</legend>
                         <ul>
                             <li>
@@ -118,7 +118,7 @@
 
         <section class="sorting-block">
             <div class="sorting">
-                <span class="found">Найдено 3:</span>
+                <span class="found">Найдено: 3</span>
                 <p>Сортировка:</p>
                 <ul>
                     <li class="sorting-item sorting-item-current"><a href="#">По цене</a></li>
@@ -151,8 +151,8 @@
                                 <tr>
                                     <td class="catalog-item-type">Гостиница</td><td class="catalog-item-price">от 400 р.</td>
                                 </tr>
-                                <tr><td><button type="button"
-                                    class="button button-blue catalog-item-info-button">Подробнее</button></td><td><button type="button"
+                                <tr><td class="td-button"><button type="button"
+                                    class="button button-blue catalog-item-info-button">Подробнее</button></td><td class="td-button"><button type="button"
                                         class="button button-brown catalog-item-reservation-button">Забронировать</button></td></tr>
                             </table>
                         </figcaption>
@@ -177,8 +177,8 @@
                                 <tr>
                                     <td class="catalog-item-type">Мотель</td><td class="catalog-item-price">от 3000 р.</td>
                                 </tr>
-                                <tr><td><button type="button"
-                                    class="button button-blue catalog-item-info-button">Подробнее</button></td><td><button type="button"
+                                <tr><td class="td-button"><button type="button"
+                                    class="button button-blue catalog-item-info-button">Подробнее</button></td><td class="td-button"><button type="button"
                                         class="button button-brown catalog-item-reservation-button">Забронировать</button></td></tr>
                             </table>
                         </figcaption>
@@ -202,8 +202,8 @@
                                 <tr>
                                     <td class="catalog-item-type">Апартаменты</td><td class="catalog-item-price">от 2000 р.</td>
                                 </tr>
-                                <tr><td><button type="button"
-                                    class="button button-blue catalog-item-info-button">Подробнее</button></td><td><button type="button"
+                                <tr><td class="td-button"><button type="button"
+                                    class="button button-blue catalog-item-info-button">Подробнее</button></td><td class="td-button"><button type="button"
                                         class="button button-brown catalog-item-reservation-button">Забронировать</button></td></tr>
                             </table>
                         </figcaption>
@@ -222,7 +222,7 @@
 
     <footer class="content-center footer-catalog">
         <p class="footer-contacts">
-            #Visitsedonabr <br>
+            #Visitsedona <br>
             Тел: +7(495) 666-02-66
         </p>
         <ul class="social">
