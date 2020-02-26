@@ -397,7 +397,7 @@ header {
 }
 
 .hotel-search-button {
-    padding: 30px 140px;
+    padding: 30px 139px;
 }
 
 .hotel-form-search-block {
@@ -435,6 +435,8 @@ header {
 
     transition-property: top;
     transition-duration: 2s;
+
+    z-index: 3;
 }
 
 /* Form animation */
@@ -647,7 +649,7 @@ header {
     display: flex;
     justify-content: space-between;
 
-    padding: 27px 72px 33px 72px;
+    padding: 27px 72px 31px 72px;
 
     font-size: 14px;
     font-weight: 400;
@@ -690,8 +692,12 @@ header {
     font-weight: 700;
 }
 
+.catalog-filter-form-cost {
+    margin-right: 3px;
+}
+
 .catalog-filter-form-cost legend {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 
     text-align: left;
 }
@@ -705,7 +711,7 @@ header {
 }
 
 .catalog-filter-form li {
-    margin-bottom: 24px;
+    margin-bottom: 25px;
 }
 
 .catalog-filter-form li:last-child {
@@ -760,10 +766,6 @@ header {
     outline: 2px dotted #ffffff;
 }
 
-.catalog-filter-form-cost {
-    margin-right: 3px;
-}
-
 .filter-range {
     min-width: 314px;
 }
@@ -773,7 +775,7 @@ header {
 
     width: 100%;
     min-height: 32px;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
 
     font-size: 0;
 
@@ -914,6 +916,7 @@ header {
 .sorting {
     display: flex;
     align-items: center;
+    margin-right: auto; /* for IE 11 */
 }
 
 .sorting p {
@@ -991,7 +994,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
 
-    padding: 26px 72px 30px 72px;
+    padding: 25px 72px 31px 72px;
     border-top: 1px solid #e5e5e5;
 }
 
@@ -1027,7 +1030,7 @@ header {
     text-align: left;
 }
 
-.catalog-item-text a {
+.catalog-item-title a {
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
@@ -1036,12 +1039,12 @@ header {
     margin: 0;
 }
 
-.catalog-item-text a:hover,
-.catalog-item-text a:focus {
+.catalog-item-title a:hover,
+.catalog-item-title a:focus {
     color: #81b3d2;
 }
 
-.catalog-item-text a:active {
+.catalog-item-title a:active {
     color: rgba(0, 0, 0, 0.3);
 } 
     
@@ -1052,7 +1055,7 @@ header {
 }
 
 .td-button {
-    padding-top: 10px;
+    padding-top: 11px;
 }
 
 .catalog-item-info-button,
@@ -1062,7 +1065,7 @@ header {
     line-height: 21px;
     color: #ffffff;
 
-    padding: 2px 16px;
+    padding: 4px 16px;
 }
 
 .catalog-item-info-button {
@@ -1075,7 +1078,7 @@ header {
 }
 
 .catalog-item-reservation-button {
-    padding: 2px 17px;
+    padding: 4px 17px;
 }
 
 .catalog-item-rating {
@@ -1125,7 +1128,31 @@ footer {
     line-height: 0;
 }
 
-.footer-contact-block {
+.footer-main {
+    position: relative;
+
+    min-height: 594px;
+}
+
+.footer-main iframe {
+    position: absolute;
+
+    width: 1200px;
+    height: 594px;
+
+    z-index: 1;
+}
+
+.map-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 0;
+}
+
+.footer-main-block,
+.footer-catalog-block {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1139,20 +1166,18 @@ footer {
 
     position: absolute;
     bottom: 0;
+
+    z-index: 2;
 }
 
 .footer-catalog {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    min-height: 121px;
+}
 
-    padding: 31px 90px 31px 129px;
-    box-sizing: border-box;
-    box-shadow: 0 10px 15px 0 rgba(0, 1, 1, 0.2);
-
-    background-color: rgba(255, 255, 255, 0.9);
-} 
+.shadow-hide-block {
+    background-color: #ffffff;
+    min-height: 121px;
+}
 
 .footer-contacts {
     min-width: 225px;
@@ -1163,6 +1188,10 @@ footer {
     color: #000000;
 
     text-align: left;
+}
+
+.footer-contacts-catalog {
+    margin-left: 6px;
 }
 
 .footer-contacts-tag,
