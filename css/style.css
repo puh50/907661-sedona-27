@@ -806,7 +806,6 @@ header {
 
     font-size: 14px;
     line-height: 32px;
-    vertical-align: top;
 
     cursor: pointer;
 }
@@ -874,16 +873,14 @@ header {
     border: 10px solid #ffffff;
 }
 
-.button-block {
-    display: block;
-    margin: 0 auto;
-}
-
 .catalog-filter-form-cost button {
-    color: #ffffff;
-    text-transform: uppercase;
+    display: block;
 
     padding: 8px 34px;
+    margin: 0 auto;
+
+    color: #ffffff;
+    text-transform: uppercase;
 
     border: 2px solid #ffffff;
     background-color: transparent;
@@ -1021,17 +1018,21 @@ header {
 }
 
 .catalog-item-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: table;
 }
 
-.catalog-item-text table {
-    border-collapse: collapse;
-} 
+.table-row {
+    display: table-row;
+}
 
-.catalog-item-text caption {
-    text-align: left;
+.table-cell{
+    display: table-cell;
+}
+
+.catalog-item-title {
+    display: table-caption;
+    margin: 0;
+    margin-bottom: 2px;
 }
 
 .catalog-item-title a {
@@ -1069,12 +1070,12 @@ header {
     line-height: 21px;
     color: #ffffff;
 
-    padding: 4px 16px;
+    padding: 4px 17px;
 }
 
 .catalog-item-info-button {
     background-color: #81b3d2;
-    margin-right: 4px;
+    margin-right: 5px;
 }
 
 .catalog-item-info-button:focus {
