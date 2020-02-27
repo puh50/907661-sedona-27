@@ -7,6 +7,8 @@ var parentNumber = form.querySelector(".parent-number");
 var childrenNumber = form.querySelector(".children-number");
 var errMessage = form.querySelector(".error-message");
 
+form.classList.add("form-hide");
+
 searchButton.addEventListener("click", function () {
     form.classList.toggle("form-hide");
 
