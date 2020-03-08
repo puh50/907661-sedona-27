@@ -67,6 +67,7 @@ img {
 
 .visually-hidden {
     position: absolute;
+    left: 0;
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -141,7 +142,7 @@ img {
     padding-left: 18px; 
 }
 
-.site-navigation-item-statemap {
+.site-navigation-item-state-map {
     padding-right: 23px; 
 }
 
@@ -196,8 +197,7 @@ img {
 .reason-intro {
     text-align: center;
 
-    padding-top: 43px;
-    padding-bottom: 37px;
+    padding: 43px 25px 37px 20px;
 }
 
 .braked-words {
@@ -225,6 +225,8 @@ img {
 }
 
 .reason-list-item-flex-block {
+    position: relative;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -234,14 +236,20 @@ img {
     padding: 0;
     margin: 0;
 
+    background-color: #81b3d2;
+
     line-height: 10px;
 
     list-style: none;
 }
 
 .reason-list-item-flex-block-reverse {
+    position: relative;
+
     display: flex;
     flex-direction: row-reverse;
+
+    background-color: #81b3d2;
 }
 
 .reason-list-item-1-description-block,
@@ -269,11 +277,23 @@ img {
 
 .reason-list-item-1-image,
 .reason-list-item-2-image {
+    position: absolute;
+
     min-width: 800px;
     min-height: 100%;
-
-    background-color: #cccccc;
 }
+
+.img-right-side {
+    top: 0;
+    right: 0;
+}
+
+.img-left-side {
+    top: 0;
+    left: 0;
+}
+
+
 
 .reason-list-item-1-image img,
 .reason-list-item-2-image img {
@@ -414,6 +434,8 @@ img {
 .hotel-search {
     text-align: center;
 
+    padding: 25px 25px 0 25px;
+
     padding-top: 25px;
 }
 
@@ -445,7 +467,7 @@ img {
     position: absolute;
     left: -15px;
     overflow-y: hidden;
-    min-height: 420px;
+    min-height: 500px;
     min-width: 600px;
 }
 
@@ -453,10 +475,12 @@ img {
     position: absolute;
     top: 0;
     left: 15px;
-    z-index: 1;
 
+    width: 569px;
     padding: 55px;
     margin-top: 0;
+
+    box-sizing: border-box;
 
     font-size: 14px;
     font-weight: 700;
@@ -537,16 +561,21 @@ img {
 }
 
 .to-date-block {
-    margin-bottom: 16px;
+    margin-bottom: 17px;
 }
 
-.from-date-label {
-    margin-right: 21px;
+.form-label-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.to-date-label {
-    margin-right: 17px;
-} 
+.form-label-date span {
+    min-width: 96px;
+    text-align: left;
+    padding-right: 17px;
+    padding-left: 1px;
+}
 
 .from-date,
 .to-date {
@@ -555,7 +584,8 @@ img {
 }
 
 .hotel-search-form-field input {
-    width: 345px;
+    flex-grow: 1;
+
     height: 38px;
     box-sizing: border-box;
 
@@ -571,8 +601,7 @@ img {
 }
 
 .hotel-search-form-field input:focus {
-    outline: none;
-    border: 2px solid #e5e5e5;
+    outline: 2px solid #e5e5e5;
 
     background-color: #ffffff;
 }
@@ -595,25 +624,42 @@ img {
     fill: #81b3d2;
 }
 
-.peaple-count {
+.people-count {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
 
     margin-bottom: 40px;
 }
 
-.peaple-count-adults,
-.peaple-count-children {
+.people-count-adults,
+.people-count-children {
     display: flex;
     align-items: center;
 }
 
-.adults-label {
-    margin-right: 41px;
-} 
+.people-cont-children {
+    min-width: 169px;
+}
 
-.peaple-count input {
+.people-count-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-width: 96px;
+    text-align: left;
+    padding-right: 15px;
+    padding-left: 2px;
+}
+
+.children-label {
+    min-width: 0;
+    padding-right: 26px;
+}
+
+.people-count input {
     width: 38px;
 
     text-align: center;
@@ -662,14 +708,6 @@ img {
 .hotel-search-form-button:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #5496bd;
-}
-
-.peaple-count-adults {
-    margin-right: 53px;
-}
-
-.children-label {
-    margin-right: 27px;
 }
 
 /* MAIN catalog */
@@ -915,7 +953,7 @@ img {
     display: block;
 
     padding: 8px 34px;
-    margin: 0 auto;
+    margin-left: calc(50% - 73px);
 
     color: #ffffff;
     text-transform: uppercase;
@@ -1033,7 +1071,7 @@ img {
     flex-direction: row;
     justify-content: space-between;
 
-    padding: 25px 72px 31px 72px;
+    padding: 26px 72px 31px 72px;
     border-top: 1px solid #e5e5e5;
 }
 
@@ -1042,6 +1080,8 @@ img {
 }
 
 .catalog-item figure {
+    position: relative;
+
     display: flex;
     flex-direction: row;
 
@@ -1051,13 +1091,16 @@ img {
 }
 
 .catalog-item-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+
     margin-right: 30px;
     margin-top: 4px;
 }
 
 .catalog-item-text {
-    display: table;
-
+    margin-left: 166px;
     margin-right: 50px;
 }
 
@@ -1067,12 +1110,20 @@ img {
 
 .table-cell{
     display: table-cell;
+
+    vertical-align: bottom;
 }
 
 .catalog-item-title {
-    display: table-caption;
     margin: 0;
     margin-bottom: 2px;
+}
+
+.catalog-item-type {
+    max-width: 116px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
 }
 
 .catalog-item-title a {
@@ -1130,6 +1181,8 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    min-width: 112px;
 }
 
 .catalog-item-stars {
@@ -1164,7 +1217,7 @@ img {
     line-height: 21px;
     color: #666666;
 
-    padding: 3px 13px;
+    padding: 2px 1px 2px 17px;
     margin: 0;
 
     background-color: #f2f2f2;
@@ -1172,7 +1225,7 @@ img {
 
 /* FOOTER */
 
-footer {
+.footer {
     line-height: 0;
 }
 
@@ -1324,10 +1377,6 @@ footer {
 .copyright span {
     margin-right: 8px;
     font-style: normal;
-}
-
-.logo-htmla {
-    color: #231f20;
 }
 
 .footer-logo:hover path {
