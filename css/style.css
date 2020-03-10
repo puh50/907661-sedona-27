@@ -271,8 +271,6 @@ img {
 
     text-align: center;
     word-break: break-all;
-
-    background-color: #81b3d2;
 }
 
 .reason-list-item-1-image,
@@ -554,32 +552,48 @@ img {
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
+.placeholder-black::-webkit-input-placeholder { /* Edge */
+    color: #000000;
+  }
+  
+.placeholder-black:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #000000;
+  }
+  
+.placeholder-black::placeholder {
+    color: #000000;
+  }
+
 .hotel-search-form-field {
     position: relative;
-    margin: 0;
-    margin-bottom: 29px;
-}
 
-.to-date-block {
-    margin-bottom: 17px;
-}
-
-.form-label-date {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    margin: 0;
+    margin-bottom: 30px;
 }
 
-.form-label-date span {
-    min-width: 96px;
+.form-label-date {
+    width: 114px;
+
     text-align: left;
-    padding-right: 17px;
-    padding-left: 1px;
+    padding-right: 5px;
+    padding-left: 2px;
+
+    box-sizing: border-box;
+}
+
+.parent-relative {
+    position: relative;
 }
 
 .from-date,
 .to-date {
-    padding-left: 13px;
+    min-width: 345px;
+
+    padding-left: 12px;
     padding-right: 32px;
 }
 
@@ -630,7 +644,7 @@ img {
     justify-content: space-between;
     align-items: center;
 
-    margin-bottom: 40px;
+    margin-bottom: 53px;
 }
 
 .people-count-adults,
@@ -639,24 +653,28 @@ img {
     align-items: center;
 }
 
+.people-count-adults {
+    width: 227px;
+}
+
 .people-cont-children {
-    min-width: 169px;
+    width: 179px;
 }
 
 .people-count-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    width: 96px;
 
-    min-width: 96px;
     text-align: left;
     padding-right: 15px;
     padding-left: 2px;
 }
 
 .children-label {
-    min-width: 0;
-    padding-right: 26px;
+    width: 64px;
+
+    padding-right: 10px;
+
+    box-sizing: border-box;
 }
 
 .people-count input {
